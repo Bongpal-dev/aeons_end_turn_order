@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TurnOrderActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTintMode="multiply"
+        android:scaleType="center"
+        android:src="@drawable/cover"
+        android:tintMode="multiply"
+        app:tint="#1E1919" />
+
+    <ImageView
+        android:id="@+id/iv_first_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/iv_second_dump_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_second_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/iv_third_dump_card"
+        app:layout_constraintStart_toEndOf="@id/iv_first_dump_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <ImageView
+        android:id="@+id/iv_third_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/iv_fourth_dump_card"
+        app:layout_constraintStart_toEndOf="@id/iv_second_dump_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_fourth_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/iv_fifth_dump_card"
+        app:layout_constraintStart_toEndOf="@id/iv_third_dump_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <ImageView
+        android:id="@+id/iv_fifth_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/iv_sixth_dump_card"
+        app:layout_constraintStart_toEndOf="@id/iv_fourth_dump_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_sixth_dump_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_fifth_dump_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <ImageView
+        android:id="@+id/iv_now_card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/three"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/iv_first_veiled_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_dump_card" />
+
+    <ImageView
+        android:id="@+id/iv_first_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toStartOf="@id/iv_second_veiled_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_second_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toStartOf="@id/iv_third_veiled_card"
+        app:layout_constraintStart_toEndOf="@id/iv_first_veiled_card"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_third_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toStartOf="@id/iv_fourth_veiled_card"
+        app:layout_constraintStart_toEndOf="@id/iv_second_veiled_card"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_fourth_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toStartOf="@id/iv_fifth_veiled_card"
+        app:layout_constraintStart_toEndOf="@id/iv_third_veiled_card"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_fifth_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toStartOf="@id/iv_sixth_veiled_card"
+        app:layout_constraintStart_toEndOf="@id/iv_fourth_veiled_card"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/iv_sixth_veiled_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_fifth_veiled_card"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <ImageView
+        android:id="@+id/btn_draw_card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:src="@drawable/dummy_six"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
